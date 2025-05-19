@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Question Paper Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #f0f4ff, #ffffff);
+    }
+  </style>
+</head>
+<body class="min-h-screen font-sans relative">
+
+  <!-- Top Right Buttons -->
+  <div class="absolute top-5 right-6 flex gap-3">
+    <a href="{% url 'upload' %}" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow transition">Upload</a>
+    <a href="#" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow transition">View</a>
+    <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg shadow transition">Search</a>
+    <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow transition">Analyze with AI</a>
+  </div>
+
+  <!-- Centered Content -->
+  <div class="flex flex-col items-center justify-center min-h-screen text-center px-4">
+    
+    <!-- Tab Navigation -->
+    <div class="flex gap-6 mb-10">
+      <a href="{% url 'tab1' %}" class="text-lg font-medium text-blue-600 border-b-2 border-blue-600 pb-1 hover:opacity-80 transition">Tab1</a>
+      <a href="{% url 'tab2' %}" class="text-lg font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-400 pb-1 transition">Tab2</a>
+      <a href="{% url 'tab3' %}" class="text-lg font-medium text-gray-600 border-b-2 border-transparent hover:border-gray-400 pb-1 transition">Tab3</a>
+    </div>
+
+    <!-- Welcome Box -->
+    <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-xl w-full border border-blue-100">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">👋 Welcome, User!</h1>
+      <p class="text-gray-500 text-lg">Manage, view, and analyze your question papers with ease.</p>
+    </div>
+  </div>
+
+</body>
+</html>
