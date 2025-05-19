@@ -1,2 +1,11 @@
 #Centralized Question Paper Collection at UG level
 #Designing a basic front-end with non functional uploading,viewing,search question papers.etc basic features
+
+#20th May-2025
+#Set up a Django project with Tailwind CSS for styling.
+#Designed a  homepage with tabs (Tab1, Tab2, Tab3,non-functional as of now) and four action buttons (Upload, View, Search, Analyze with AI).
+#Created separate Django views and templates for each tab, connected via URL routing.
+#Implemented a Django model QuestionPaper to store uploaded question papers with fields: name, details, source, and pdf.
+#Built a Django form for uploading PDFs, linked to an upload page accessible from the Upload button.
+#Configured media settings in Django (MEDIA_URL and MEDIA_ROOT) and updated URL patterns to serve uploaded files during development.
+#Added template for file upload form using Tailwind CSS for a clean UI.
